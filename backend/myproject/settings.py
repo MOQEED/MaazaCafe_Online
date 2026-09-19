@@ -78,13 +78,18 @@ TEMPLATES = [
 WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Database - SQLite with persistent disk support (SQLITE_DIR)
+# If SQLITE_DIR does not exist or cannot be created (e.g. Render free tier without persistent disk), fallback to BASE_DIR
+sqlite_dir = os.environ.get('SQLITE_DIR', str(BASE_DIR))
+if not (os.path.isdir(sqlite_dir) and os.access(sqlite_dir, os.W_OK)):
+    try:
+        os.makedirs(sqlite_dir, exist_ok=True)
+    except OSError:
+        sqlite_dir = str(BASE_DIR)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(
-            os.environ.get('SQLITE_DIR', str(BASE_DIR)),
-            'db.sqlite3',
-        ),
+        'NAME': os.path.join(sqlite_dir, 'db.sqlite3'),
     }
 }
 
