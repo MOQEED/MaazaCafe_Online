@@ -147,14 +147,21 @@ SIMPLE_JWT = {
 
 # CORS & CSRF configuration
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:5173',
+    'https://maaza-cafe-online-7sr29uidp-moqeeds-projects.vercel.app',
+    'https://maaza-cafe-online.vercel.app',
+    'https://maaza-cafe-online-moqeeds-projects.vercel.app',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:5173',
+    'https://maaza-cafe-online-7sr29uidp-moqeeds-projects.vercel.app',
+    'https://maaza-cafe-online.vercel.app',
+    'https://maaza-cafe-online-moqeeds-projects.vercel.app',
     'https://*.drops.nxtwave.tech',
     'https://*.onrender.com',
     'https://*.vercel.app',
