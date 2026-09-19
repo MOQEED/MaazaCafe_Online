@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
+  <defs>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="60%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#ea580c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Cafe Emblem / Steaming Kulhad/Cup -->
+  <g transform="translate(8, 6)" filter="url(#glow)">
+    <!-- Plate / Saucer -->
+    <ellipse cx="32" cy="62" rx="26" ry="5" fill="#f97316" opacity="0.3"/>
+    <ellipse cx="32" cy="60" rx="22" ry="4" fill="url(#cupGrad)"/>
+
+    <!-- Cup Body -->
+    <path d="M16,24 L22,54 C23,57 26,59 30,59 L34,59 C38,59 41,57 42,54 L48,24 Z" fill="url(#cupGrad)"/>
+    <!-- Cup Rim -->
+    <ellipse cx="32" cy="24" rx="16" ry="4" fill="#fb923c"/>
+    <ellipse cx="32" cy="24" rx="13" ry="3" fill="#7c2d12"/>
+
+    <!-- Cup Handle -->
+    <path d="M46,28 C54,28 55,42 43,45" fill="none" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Steaming Aroma Curves -->
+    <path d="M26,17 C24,11 30,8 27,2" fill="none" stroke="url(#steamGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32,18 C30,10 36,7 33,0" fill="none" stroke="url(#steamGrad)" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M38,17 C36,11 42,8 39,2" fill="none" stroke="url(#steamGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Little Sparkle -->
+    <circle cx="50" cy="12" r="2" fill="#fbbf24"/>
+    <circle cx="14" cy="18" r="1.5" fill="#fbbf24"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(76, 2)">
+    <!-- "Maaza" -->
+    <text x="0" y="40" font-family="'Outfit', 'Poppins', 'Segoe UI', sans-serif" font-weight="900" font-size="34" fill="url(#textGrad)" letter-spacing="1">
+      MAAZA
+    </text>
+
+    <!-- "CAFE" Badge / Accent -->
+    <g transform="translate(132, 14)">
+      <rect x="0" y="0" width="86" height="28" rx="6" fill="url(#cupGrad)"/>
+      <text x="43" y="19" font-family="'Outfit', 'Poppins', 'Segoe UI', sans-serif" font-weight="800" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+        CAFE
+      </text>
+    </g>
+
+    <!-- Tagline -->
+    <text x="2" y="60" font-family="'Roboto', 'Open Sans', sans-serif" font-weight="600" font-size="9.5" fill="#9a3412" letter-spacing="2.8">
+      AUTHENTIC FOOD • CHAI • DELIGHTS
+    </text>
+  </g>
+</svg>

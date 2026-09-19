@@ -1,0 +1,19 @@
+# Environments
+env/
+venv/
+node_modules/
+
+# Static and builds
+dist/
+build/
+staticfiles/
+
+# Database & cache
+db.sqlite3-journal
+__pycache__/
+*.pyc
+
+# Local env files
+.env.local
+.DS_Store
+Thumbs.db

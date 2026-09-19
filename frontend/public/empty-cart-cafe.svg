@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350" fill="none">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fed7aa" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Soft Glow -->
+  <circle cx="250" cy="175" r="150" fill="url(#bgGlow)"/>
+
+  <!-- Serving Tray Shadow -->
+  <ellipse cx="250" cy="245" rx="160" ry="24" fill="#cbd5e1" opacity="0.6"/>
+
+  <!-- Dining Cloche / Plate Base -->
+  <ellipse cx="250" cy="235" rx="145" ry="20" fill="url(#trayGrad)" stroke="#cbd5e1" stroke-width="3"/>
+  <ellipse cx="250" cy="232" rx="125" ry="16" fill="url(#plateGrad)" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Food Cloche Cover (Lifted to show empty delicious dish) -->
+  <g transform="translate(0, -25)">
+    <!-- Cloche dome -->
+    <path d="M165,190 C165,115 210,95 250,95 C290,95 335,115 335,190 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+    <!-- Highlight on dome -->
+    <path d="M185,180 C185,125 215,108 245,105" stroke="#f8fafc" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Cloche Handle -->
+    <ellipse cx="250" cy="95" rx="12" ry="4" fill="url(#accent)"/>
+    <circle cx="250" cy="85" r="9" fill="url(#accent)"/>
+    <!-- Cloche Rim -->
+    <ellipse cx="250" cy="190" rx="85" ry="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5"/>
+  </g>
+
+  <!-- Fork and Spoon on sides -->
+  <!-- Fork -->
+  <g transform="translate(100, 140) rotate(-15)">
+    <rect x="0" y="30" width="6" height="55" rx="3" fill="#94a3b8"/>
+    <path d="M-5,10 C-5,25 11,25 11,10" fill="#94a3b8"/>
+    <rect x="-4" y="0" width="2.5" height="15" rx="1" fill="#94a3b8"/>
+    <rect x="0.5" y="0" width="2.5" height="15" rx="1" fill="#94a3b8"/>
+    <rect x="5" y="0" width="2.5" height="15" rx="1" fill="#94a3b8"/>
+    <rect x="9.5" y="0" width="2.5" height="15" rx="1" fill="#94a3b8"/>
+  </g>
+
+  <!-- Spoon -->
+  <g transform="translate(390, 140) rotate(15)">
+    <rect x="0" y="30" width="6" height="55" rx="3" fill="#94a3b8"/>
+    <ellipse cx="3" cy="12" rx="12" ry="18" fill="#94a3b8"/>
+    <ellipse cx="3" cy="12" rx="9" ry="15" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Little Little Cafe Sparkles / Aroma -->
+  <path d="M245,45 C242,38 248,34 246,28" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M255,42 C252,36 257,32 255,27" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="280" cy="40" r="3" fill="#f59e0b"/>
+  <circle cx="220" cy="50" r="2.5" fill="#ea580c"/>
+</svg>
