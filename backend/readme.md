@@ -1,5 +1,14 @@
-## image of sony headphones
+# Backend Quick Reference
 
+The backend is the Django REST API for Maaza Cafe Online. Its setup instructions, complete file map, API reference, test commands, and deployment notes are maintained in the [root project README](../README.md).
 
+From this directory, the usual local commands are:
 
-https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/loading-data/niat_programming_foundations/niat_coding_questions/django_song_headphones_image.jpeg
+```bash
+python -m venv env
+python -m pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver 8000
+```
+
+Activate the virtual environment before installing dependencies or running Django. See the root README before running `seed_maaza_cafe.py`; it deletes existing products and resets the demo seller password.
